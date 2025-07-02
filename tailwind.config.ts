@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,12 +62,55 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// FeedLink custom colors
+				golden: {
+					DEFAULT: '#F7C948',
+					50: '#FEF9E6',
+					100: '#FDF2CC',
+					200: '#FBE599',
+					300: '#F9D866',
+					400: '#F7CB33',
+					500: '#F7C948',
+					600: '#C5A03A',
+					700: '#94782B',
+					800: '#62501D',
+					900: '#31280E'
+				},
+				teal: {
+					DEFAULT: '#035956',
+					50: '#E6F3F3',
+					100: '#CCE7E6',
+					200: '#99CFCD',
+					300: '#66B7B4',
+					400: '#339F9B',
+					500: '#035956',
+					600: '#024745',
+					700: '#023534',
+					800: '#012322',
+					900: '#001211'
+				},
+				skyblue: {
+					DEFAULT: '#6EC1E4',
+					50: '#F0F9FD',
+					100: '#E1F3FB',
+					200: '#C3E7F7',
+					300: '#A5DBF3',
+					400: '#87CFEF',
+					500: '#6EC1E4',
+					600: '#589BB6',
+					700: '#427489',
+					800: '#2C4E5C',
+					900: '#16272E'
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +128,43 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'bounce-arrow': {
+					'0%, 20%, 50%, 80%, 100%': {
+						transform: 'translateX(0)'
+					},
+					'40%': {
+						transform: 'translateX(10px)'
+					},
+					'60%': {
+						transform: 'translateX(8px)'
+					}
+				},
+				'pulse-scale': {
+					'0%, 100%': {
+						transform: 'scale(1)'
+					},
+					'50%': {
+						transform: 'scale(1.05)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'bounce-arrow': 'bounce-arrow 2s infinite',
+				'pulse-scale': 'pulse-scale 2s infinite'
 			}
 		}
 	},
