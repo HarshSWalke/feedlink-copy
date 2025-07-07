@@ -7,7 +7,6 @@ import Index from "./pages/Index";
 import FindFood from "./pages/FindFood";
 import RestaurantRegistration from "./pages/RestaurantRegistration";
 import RestaurantDashboard from "./pages/RestaurantDashboard";
-import VolunteerDashboard from "./pages/VolunteerDashboard";
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
@@ -25,7 +24,6 @@ const App = () => (
           <Route path="/find-food" element={<FindFood />} />
           <Route path="/restaurant-registration" element={<RestaurantRegistration />} />
           <Route path="/restaurant-dashboard" element={<RestaurantDashboard />} />
-          <Route path="/volunteer-dashboard" element={<VolunteerDashboard />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />

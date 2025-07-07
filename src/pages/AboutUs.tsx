@@ -17,7 +17,7 @@ export default function AboutUs() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-2">Our Story</h2>
           <p className="text-gray-600">
-            Founded in 2024 by Harsh Walke, Feedlink was born out of a desire to reduce food waste and help communities thrive. We connect restaurants, volunteers, and organizations to ensure surplus food reaches those who need it most. What started as a local initiative in Pune has grown into a movement, inspiring others to join the fight against hunger.
+            Founded in 2024 by Harsh Walke, Feedlink was born out of a desire to reduce food waste and help communities thrive. We connect restaurants and organizations to ensure surplus food reaches those who need it most. What started as a local initiative in Pune has grown into a movement, inspiring others to join the fight against hunger.
           </p>
         </section>
         <section className="mb-8">
@@ -29,7 +29,7 @@ export default function AboutUs() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-2">Our Impact</h2>
           <p className="text-gray-600">
-            Since our inception, Feedlink has helped distribute thousands of meals to those in need, prevented tons of food from ending up in landfills, and built a community of caring individuals and businesses. Our platform empowers restaurants to give back, volunteers to make a difference, and recipients to find hope.
+            Since our inception, Feedlink has helped distribute thousands of meals to those in need, prevented tons of food from ending up in landfills, and built a community of caring individuals and businesses. Our platform empowers restaurants to give back and recipients to find hope.
           </p>
         </section>
         <section className="mb-8">

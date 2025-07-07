@@ -40,3 +40,38 @@
 .read-the-docs {
   color: #888;
 }
+
+@keyframes pop-bounce {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-pop-bounce {
+  animation: pop-bounce 1s cubic-bezier(0.23, 1, 0.32, 1) 0.1s both;
+}
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+.animate-gradient-move {
+  background-size: 200% 200%;
+  animation: gradient-move 2.5s linear infinite alternate;
+}
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 4s linear infinite;
+}
+
+@keyframes wave-slow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+.animate-wave-slow {
+  animation: wave-slow 6s ease-in-out infinite;
+}

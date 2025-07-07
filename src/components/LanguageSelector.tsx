@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -8,15 +7,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Globe } from "lucide-react";
-
-const languages = [
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'hi', name: 'हिंदी', flag: '🇮🇳' },
-  { code: 'mr', name: 'मराठी', flag: '🇮🇳' },
-];
+import { LANGUAGES, useI18n } from "@/lib/utils.tsx";
 
 const LanguageSelector = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+  const { language, setLanguage } = useI18n();
+  const selectedLanguage = LANGUAGES.find(l => l.code === language) || LANGUAGES[0];
 
   return (
     <DropdownMenu>
@@ -28,10 +23,10 @@ const LanguageSelector = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-white/95 backdrop-blur-sm border-2 border-golden/30">
-        {languages.map((language) => (
+        {LANGUAGES.map((language) => (
           <DropdownMenuItem 
             key={language.code}
-            onClick={() => setSelectedLanguage(language)}
+            onClick={() => setLanguage(language.code)}
             className="hover:bg-golden/20 cursor-pointer"
           >
             <span className="mr-2">{language.flag}</span>
